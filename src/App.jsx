@@ -3,6 +3,7 @@ import './App.css'
 import Aurora from './assets/components/Aurora'
 import CardNav  from './assets/components/CardNav'
 import prfp from './assets/images/prfp.jpeg'
+import proj2 from './assets/images/proj2.jpg'
 import PDFViewer from './assets/components/pdfviewer'
 import ScrollStack, { ScrollStackItem } from './assets/components/ScrollStack'
 
@@ -94,9 +95,16 @@ function App() {
                 </ScrollStackItem>
 
                 <ScrollStackItem itemClassName="project-card">
-                  <div className="card-content" style={{ borderRadius: "1rem" }}>
-                    <h2>Featured Project 2</h2>
-                    <p>An ML pipeline with automated data validation using Great Expectations and MLflow tracking.</p>
+                  <div className="card-content" style={{ borderRadius: "1rem",  display:"flex", flexDirection:"row"}}>
+                    <div>
+                      <h2>Customer Churn Predictor + MLOps</h2>
+                      <p>An ML pipeline with automated data validation using Great Expectations and MLflow tracking.</p>
+                      <a target="_blank" href='https://www.linkedin.com/posts/duttdigvijay_machinelearning-customerchurn-streamlit-activity-7351201722591031310-qIyd'>Video Demo</a><br />
+                      <a>Git hub</a>
+                    </div>
+                    <div style={{display:"flex",alignItems:"center"}}> 
+                      <img src={proj2} alt="" style={{maxWidth:"300px", maxHeight:"100px"}}/>
+                    </div>
                   </div>
                 </ScrollStackItem>
 
@@ -113,8 +121,9 @@ function App() {
               <PDFViewer fileN='/paper.pdf' />
             </div>
           </div>
-          <div>
+          <div style={{display:"flex", flexDirection:"column", alignItems:"center", width:"100%"}}>
             <h1 id='contact'>Contact:</h1>
+            <p>Mobile Phone: +91 9871600938<br />e-mail: duttdigvijay@gmail.com<br />Linkedin: <a href="https://www.linkedin.com/in/duttdigvijay/">@DigvijayDutt</a></p>
           </div>
         </div>
 

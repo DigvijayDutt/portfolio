@@ -100,7 +100,7 @@ function App() {
                       <h2>Customer Churn Predictor + MLOps</h2>
                       <p>An ML pipeline with automated data validation using Great Expectations and MLflow tracking.</p>
                       <a target="_blank" href='https://www.linkedin.com/posts/duttdigvijay_machinelearning-customerchurn-streamlit-activity-7351201722591031310-qIyd'>Video Demo</a><br />
-                      <a>Git hub</a>
+                      <a target='_blank' href='https://github.com/DigvijayDutt/CustomerChurnPred'>Git hub</a>
                     </div>
                     <div style={{display:"flex",alignItems:"center"}}> 
                       <img src={proj2} alt="" style={{maxWidth:"300px", maxHeight:"100px"}}/>

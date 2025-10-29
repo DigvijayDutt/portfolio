@@ -58,23 +58,23 @@ function App() {
         ease="power3.out"
       />
       <body style={{display:"flex"}}>
-        <div style={{zIndex:1, width:"100%", maxWidth:"820px", display:'flex', flexDirection:'column', alignItems:'flex-start', position:'absolute', top:"10vh"}}>
+        <div style={{zIndex:1, width:"100%", maxWidth:"1000px", display:'flex', flexDirection:'column', alignItems:'flex-start', position:'absolute', top:"10vh"}}>
           <div>
             <h1 id='about' style={{position:'relative',left:'0'}}>About me:</h1>
             <p>I am a 4th-year B.Tech Computer Science student passionate about technology and innovation with 8 months of hands-on experience in AI/ML using Python , I have developed a strong foundation in machine learning concepts.<br/><br/>Additionally, I am skilled in the MERN stack for web development ,enabling me to create dynamic and responsive applications.<br/><br/> I actively pursue competitive programming in Python, honing problem-solving and algorithmic skills .<br/><br/>Eager to contribute and grow through challenging opportunities .</p>
             <h3 >Experience: </h3>
               <img src="/intern.jpg"></img>
             <h3 >Education/Certifications: </h3>
-            <div style={{display:"flex", flexDirection:"column",justifyContent:"center", alignItems:"center", maxWidth:"800px"}}>
+            <div style={{display:"flex", flexDirection:"row",justifyContent:"space-between", alignItems:"center", maxWidth:"100%"}}>
               <PDFViewer fileN='/cert1.pdf' />
               <PDFViewer fileN='/cert2.pdf' />
               <PDFViewer fileN='/udemy.pdf' />
             </div>
           </div>
-          <div>
+          <div style={{display:"flex", flexDirection:"column" , alignItems:"center", justifyContent: "center"}}>
             <h1 id='projects'>Projects:</h1>
             <h3 >Featured: (scroll here)</h3>
-            <div style={{ width: "100%", height: "300px", overflow: "hidden" ,position:'center'}}>
+            <div style={{ width: "100%", height: "300px", overflow: "hidden" ,position:'center' }}>
               <ScrollStack
                 className="custom-scroll-stack"
                 itemDistance={30}
@@ -117,8 +117,8 @@ function App() {
               </ScrollStack>
             </div>            
             <h3 >Research: </h3>
-            <div style={{width:"100%"}}>
-              <PDFViewer fileN='/paper.pdf' />
+            <div style={{width:"80%"}}>
+              <PDFViewer fileN='/paper.pdf' maxHeight={"fit-content"}/>
             </div>
           </div>
           <div style={{display:"flex", flexDirection:"column", alignItems:"center", width:"100%"}}>

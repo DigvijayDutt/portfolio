@@ -162,7 +162,7 @@
   color:white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .card-nav-container {
     width: 90%;
     top: 1.2em;
@@ -174,17 +174,17 @@
   }
 
   .hamburger-menu {
-    order: 2;
-  }
-
-  .logo-container {
-    position: static;
-    transform: none;
     order: 1;
   }
 
-  .card-nav-cta-button {
+  .logo-container {
     display: none;
+    position: static;
+    transform: none;
+  }
+
+  .card-nav-cta-button{
+    order:2;
   }
 
   .card-nav-content {

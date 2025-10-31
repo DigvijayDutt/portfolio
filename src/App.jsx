@@ -58,14 +58,25 @@ function App() {
         ease="power3.out"
       />
       <body style={{display:"flex"}}>
-        <div style={{zIndex:1, width:"100%", maxWidth:"1000px", display:'flex', flexDirection:'column', alignItems:'flex-start', position:'absolute', top:"10vh"}}>
+          <div style={{
+                zIndex: 1,
+                width: "100%",
+                maxWidth: "1000px",
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                position: 'absolute',
+                top: "10vh",
+                padding: "0 20px",
+              }}
+          >
           <div>
             <h1 id='about' style={{position:'relative',left:'0'}}>About me:</h1>
             <p>I am a 4th-year B.Tech Computer Science student passionate about technology and innovation with 8 months of hands-on experience in AI/ML using Python , I have developed a strong foundation in machine learning concepts.<br/><br/>Additionally, I am skilled in the MERN stack for web development ,enabling me to create dynamic and responsive applications.<br/><br/> I actively pursue competitive programming in Python, honing problem-solving and algorithmic skills .<br/><br/>Eager to contribute and grow through challenging opportunities .</p>
             <h3 >Experience: </h3>
               <img src="/intern.jpg"></img>
             <h3 >Education/Certifications: </h3>
-            <div style={{display:"flex", flexDirection:"row",justifyContent:"space-between", alignItems:"center", maxWidth:"100%"}}>
+            <div className='cert-section'>
               <PDFViewer fileN='/cert1.pdf' />
               <PDFViewer fileN='/cert2.pdf' />
               <PDFViewer fileN='/udemy.pdf' />

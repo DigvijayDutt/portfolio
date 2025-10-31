@@ -11,3 +11,15 @@
   flex-direction: column;
 }
 
+.cert-section{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  max-width:100%;
+}
+@media screen and (max-width:768px) {
+  .cert-section{
+    flex-direction: column;
+  }
+}
